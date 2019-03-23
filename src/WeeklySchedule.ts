@@ -1,6 +1,6 @@
 import Schedule from './Schedule';
 
-interface weeklyPeriodicityInfo {
+interface IWeeklyPeriodicityInfo {
   finisher: Date;
   whichWeek: number;
   whichDays: number[];
@@ -11,18 +11,18 @@ export default class WeeklySchedule extends Schedule {
   private whichWeek: number;
   private whichDays: number[];
   
-  /**
+/**
  * Weekly schedule plan.
  * @constructor
  * @param starter - starting date for the schedule plan
  * @param weeklyPeriodicityInfo - weekly schedule options
  * 
- * @interface weeklyPeriodicityInfo
+ * @interface IWeeklyPeriodicityInfo
  * @param whichWeek - n-th next week
  * @param whichDays - ISO days of the week 
  * @param finisher - last day for the schedule plan
  */
-  constructor (starter: Date, periodicityInfo: weeklyPeriodicityInfo) {
+  constructor (starter: Date, periodicityInfo: IWeeklyPeriodicityInfo) {
     super (starter, periodicityInfo.finisher);
 
     this.whichWeek = periodicityInfo.whichWeek;
