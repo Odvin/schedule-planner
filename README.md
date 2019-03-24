@@ -57,6 +57,8 @@ console.log(lastDayInSchedule.toLocaleString());
 Generate the array of Date objects from the next day of starter week up to the end of the week or for the next week if it is not possible.
 
 ```js
+const { DailySchedule } = require('schedule-planner');
+
 // For the same week
 const starter = new Date(2019, 02, 11, 22, 00, 0); // Monday
 const finisher = new Date(2019, 02, 20, 16, 00, 0);
