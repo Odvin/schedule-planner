@@ -5,6 +5,15 @@ interface IDecadePeriodicityInfo {
 }
 
 export default class DecadeSchedule extends Schedule {
+  /**
+   * Decade schedule plan.
+   * @constructor
+   * @param starter - starting date for the schedule plan
+   * @param periodicityInfo - weekly schedule options
+   *
+   * @interface IDecadePeriodicityInfo
+   * @param finisher - last day for the schedule plan
+   */
   constructor(starter: Date, periodicityInfo: IDecadePeriodicityInfo) {
     super(starter, periodicityInfo.finisher);
 
