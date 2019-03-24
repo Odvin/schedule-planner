@@ -1,6 +1,6 @@
 {
   "name": "schedule-planner",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Schedule calendar dates according to some rules of periodicity.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

@@ -15,7 +15,7 @@ export default class DailySchedule extends Schedule {
    * @param periodicityInfo - hurly schedule options
    *
    * @interface IDailyPeriodicityInfo
-   * @param whichDay - 0 for each working day. 1, 2 ... 6 for each n-th day. 
+   * @param whichDay - 0 for each working day. 1, 2 ... 6 for each n-th day.
    * @param finisher - last day for the schedule plan
    */
   constructor(starter: Date, periodicityInfo: IDailyPeriodicityInfo) {
