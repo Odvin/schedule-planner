@@ -7,6 +7,17 @@ interface IHourlyPeriodicityInfo {
 
 export default class HourlySchedule extends Schedule {
   private whichTimes: string[];
+
+  /**
+   * Hourly schedule plan.
+   * @constructor
+   * @param starter - starting date for the schedule plan
+   * @param periodicityInfo - hurly schedule options
+   *
+   * @interface IHourlyPeriodicityInfo
+   * @param whichTimes - [hh:mm, hh:mm, ...] schedule times
+   * @param finisher - last day for the schedule plan
+   */
   constructor(starter: Date, periodicityInfo: IHourlyPeriodicityInfo) {
     super(starter, periodicityInfo.finisher);
 

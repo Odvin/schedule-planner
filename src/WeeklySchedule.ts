@@ -14,7 +14,7 @@ export default class WeeklySchedule extends Schedule {
    * Weekly schedule plan.
    * @constructor
    * @param starter - starting date for the schedule plan
-   * @param weeklyPeriodicityInfo - weekly schedule options
+   * @param periodicityInfo - weekly schedule options
    *
    * @interface IWeeklyPeriodicityInfo
    * @param whichWeek - n-th next week

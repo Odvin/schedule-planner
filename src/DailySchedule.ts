@@ -8,6 +8,16 @@ interface IDailyPeriodicityInfo {
 export default class DailySchedule extends Schedule {
   private whichDay: number;
 
+  /**
+   * Daily schedule plan.
+   * @constructor
+   * @param starter - starting date for the schedule plan
+   * @param periodicityInfo - hurly schedule options
+   *
+   * @interface IDailyPeriodicityInfo
+   * @param whichDay - 0 for each working day. 1, 2 ... 6 for each n-th day. 
+   * @param finisher - last day for the schedule plan
+   */
   constructor(starter: Date, periodicityInfo: IDailyPeriodicityInfo) {
     super(starter, periodicityInfo.finisher);
 

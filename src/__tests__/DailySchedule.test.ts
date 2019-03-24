@@ -4,7 +4,7 @@ describe('Daily Schedule tests', () => {
   test(`Start from a Monday. End date is out of the week.
         Has to calculate the same week working days from Tuesday up to Friday included.`, () => {
     const starter = new Date('2019-03-11T14:13:01.561Z');
-    const finisher = new Date('2019-03-16T14:13:01.561Z');
+    const finisher = new Date('2019-03-20T14:13:01.561Z');
     const whichDay = 0;
     const periodicityInfo = { finisher, whichDay };
     const res = new DailySchedule(starter, periodicityInfo);
